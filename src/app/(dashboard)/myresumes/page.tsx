@@ -1,4 +1,4 @@
-//import CardWrapper from '@/app/ui/dashboard/cards';
+import CardWrapper from "@/components/dashboard/cards";
 import { lusitana } from "@/components/fonts";
 import { Suspense } from "react";
 import { Metadata } from "next";
@@ -14,7 +14,7 @@ export default async function Page() {
         My Resumes
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {/* <CardWrapper /> */}
+        <CardWrapper params={{ id: "410544b2-4001-4271-9855-fec4b6a6442a" }} />
       </div>
     </main>
   );

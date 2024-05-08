@@ -49,10 +49,10 @@ async function seedResumes(client) {
     // Create the "resumes" table if it doesn't exist
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS resumes (
-        id UUID NOT NULL DEFAULT uuid_generate_v4() PRIMARY KEY,
-        userId UUID REFERENCES users(id),
+        id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+        user_id UUID REFERENCES users(id) NOT NULL,
         name VARCHAR(255) NOT NULL,
-        title VARCHAR(255) NOT NULL,
+        title VARCHAR(255) NOT NULL
       );
     `;
 
@@ -62,8 +62,8 @@ async function seedResumes(client) {
     const insertedResumes = await Promise.all(
       resumes.map(
         (resume) => client.sql`
-        INSERT INTO customers (id, userId, name, title)
-        VALUES (${resume.id}, ${resume.userId}, ${resume.name}, ${resume.title})
+        INSERT INTO resumes (id, user_id, name, title)
+        VALUES (${resume.id}, ${resume.user_id}, ${resume.name}, ${resume.title})
         ON CONFLICT (id) DO NOTHING;
       `
       )
