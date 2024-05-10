@@ -15,10 +15,10 @@ const links = [
   { name: "Home", href: "/dashboard", icon: HomeIcon },
   {
     name: "My Resume",
-    href: "/myresumes",
+    href: "/dashboard/myresumes",
     icon: DocumentDuplicateIcon,
   },
-  { name: "My Jobs", href: "/myjobs", icon: UserGroupIcon },
+  { name: "My Jobs", href: "/dashboard/myjobs", icon: UserGroupIcon },
 ];
 
 export default function NavLinks() {

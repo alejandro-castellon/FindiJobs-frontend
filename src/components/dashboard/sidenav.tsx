@@ -2,7 +2,7 @@ import Link from "next/link";
 import NavLinks from "@/components/dashboard/nav-links";
 import FindiJobsLogo from "@/components/findijobs-logo";
 import { PowerIcon } from "@heroicons/react/24/outline";
-import { signOut } from "@/auth/auth";
+import { signOut } from "../../auth/auth";
 
 export default function SideNav() {
   return (

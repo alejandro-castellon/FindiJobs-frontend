@@ -1,9 +1,12 @@
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { inter } from "@/components/fonts";
-import "@/components/globals.css";
 
 export const metadata: Metadata = {
-  title: "FidiJobs",
+  title: {
+    template: "%s | FindiJobs",
+    default: "FindiJobs",
+  },
   description: "Th official app to create your resume.",
 };
 
