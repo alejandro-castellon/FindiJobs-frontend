@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resume",
+  title: "Dashboard",
 };
 
 export default async function Page() {

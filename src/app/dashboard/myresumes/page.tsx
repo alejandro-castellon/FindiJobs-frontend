@@ -14,7 +14,11 @@ export default async function Page() {
         My Resumes
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <CardWrapper params={{ id: "410544b2-4001-4271-9855-fec4b6a6442a" }} />
+        <Suspense>
+          <CardWrapper
+            params={{ id: "410544b2-4001-4271-9855-fec4b6a6442a" }}
+          />
+        </Suspense>
       </div>
     </main>
   );
