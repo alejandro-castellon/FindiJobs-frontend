@@ -1,5 +1,5 @@
 import CardWrapper from "@/components/dashboard/cards";
-import { lusitana } from "@/components/fonts";
+import { lusitana } from "@/fonts/fonts";
 import { Suspense } from "react";
 import { Metadata } from "next";
 

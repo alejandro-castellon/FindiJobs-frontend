@@ -5,7 +5,7 @@ import {
   InboxIcon,
   RssIcon,
 } from "@heroicons/react/24/outline";
-import { lusitana } from "@/components/fonts";
+import { lusitana } from "@/fonts/fonts";
 import { fetchResumeById } from "@/db/resumes";
 
 const iconMap = {

@@ -1,13 +1,13 @@
 import "@/styles/globals.css";
 import { Metadata } from "next";
-import { inter } from "@/components/fonts";
+import { inter } from "@/fonts/fonts";
 
 export const metadata: Metadata = {
   title: {
     template: "%s | FindiJobs",
     default: "FindiJobs",
   },
-  description: "Th official app to create your resume.",
+  description: "The official app to create your resume.",
 };
 
 export default function RootLayout({
